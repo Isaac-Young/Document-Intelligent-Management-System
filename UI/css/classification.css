@@ -1,0 +1,84 @@
+#bgred {background-color: red;}
+#bgyellow {background-color: yellow; }
+
+.labelhead {
+    position: absolute;
+    align-items: flex-start;
+    display:flex;
+    width: 12px;
+    height: 35px;
+}
+
+.labelname {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    height: 35px;
+    color: #1992d4;
+    font-size: 150%;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.faceName {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin: 3px auto 3px 18px;
+    text-align: center;
+}
+
+.face {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #515769;
+    margin: 5px 15px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+.facePname {
+    display: inline-block;
+}
+
+.location {
+    display: block;
+    border-radius: 10%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #515769;
+    margin-left: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-size: 120px 120px;
+    background-position: center;
+}
+
+.locationName {
+    display: inline-block;
+    width: 120px;
+    height: 20px;
+    margin: 3px auto 3px 28px;
+    text-align: center;
+}
+
+.locationPname {
+    display: inline-block;
+}
+
+.thumblock {
+    height: 0;
+    background-color: beige;
+    display: block;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+.thumbimg {
+    height: 300px;
+    display: inline-block;
+    margin: 3px;
+}

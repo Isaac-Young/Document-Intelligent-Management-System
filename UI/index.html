@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8"/>
+        <title>文档智能管理系统</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="shortcut icon" href="favicon.ico"/>
+
+
+<style> 
+     #login_click{ 
+     	margin-top:32px; height:40px;
+     }
+     #login_click a {         
+	text-decoration:none;	
+	background:#16A1F3;	
+	color:#f2f2f2;		
+	padding: 10px 30px 10px 30px;	
+	font-size:16px;	
+	font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;	
+	font-weight:bold;	
+	border-radius:3px;		
+	-webkit-transition:all linear 0.30s;	
+	-moz-transition:all linear 0.30s;	
+	transition:all linear 0.30s;		
+      }   
+
+      #login_click a:hover { 
+	background:#f3c00a; 
+      } 
+
+</style>
+    </head>
+    <body id="body" data-spy="scroll" data-target=".header">
+        <header class="header navbar-fixed-top">
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+
+                    </div>
+
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">首页</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="workspace.html">文档管理</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="picture.html">以图搜图</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="register.html">加入我们</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">联系我们</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="help.html">帮助</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/">设置</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+            </div>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title">文档智能管理系统</h1>
+                                <p class="color-white"> Document Intelligent Management System<br/></p>
+                            </div>
+                            <a href="manage.html" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">管理文档</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h2 class="carousel-title">文档智能管理系统</h2>
+                                <p class="color-white">Document Intelligent Management System <br/></p>
+                            </div>
+                            <a href="picture.html" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">以图搜图</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="about">
+            <div class="content-lg container">
+                
+                <div class="masonry-grid row">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
+                
+                    <div class="margin-b-60">
+
+                            <h2>多渠道文档快速收集</h2>
+                            <p>本地文档快速上传，纸质文件电子化，API接口集成扫描仪，办公、业务系统，文件自动上传，统一收集到服务端，集中管理。 </p>
+                        </div>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/01.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="margin-b-60">
+                            <img class="full-width img-responsive wow fadeInUp" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+                        </div>
+                        <h2>强大文档组织分类管理 </h2>
+                        <p>规范化组织分类，按照企业特点自定义文档元数据，树状形目录结构，层级划分，自定义标签、属性分类，按企业所需，自行定义。 </p>
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="margin-t-60 margin-b-60">
+                            <h2>毫秒级的文档检索和快速分享 </h2>
+                            <p>提供全文检索、条件组合检索，快速找到需要的文件，及时消息提醒关注文件动态变化，让你快速获取正确文档，不误事。 </p>
+                        </div>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/03.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
+                    </div>
+                </div>
+       
+        <div id="about">
+            <div class="content-lg container">
+                <div class="masonry-grid row">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
+                
+                    <div class="margin-b-60">
+
+                            <h2>支持多种文档在线预览/播放 </h2>
+                            <p>doc、docx、xlx、ppt、pdf、JPEG、PNG、exe等市面上主流格式预览，无需下载到本地。 </p>
+                        </div>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/01.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="margin-b-60">
+                            <img class="full-width img-responsive wow fadeInUp" src="img/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+                        </div>
+                        <h2>多渠道文档快速收集</h2>
+                        <p>本地文档快速上传，纸质文件电子化，API接口集成扫描仪，办公、业务系统，文件自动上传，统一收集到服务端，集中管理。 </p>
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="margin-t-60 margin-b-60">
+                            <h2>个性化的流程管控 </h2>
+                            <p>系统内置审批、外发、借阅、等常用流程；也可按需自定义流程，自定义审批步骤，自定义审批人，自定义审批范围，自定义审批权限等等。用户对当前文档每发起一个流程，都会有一个相应流程单自动和文档相关联。 </p>
+                        </div>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/03.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
+                    </div>
+                </div>
+                 <img class="full-width img-responsive wow fadeInUp" " alt="" data-wow-duration=".3" data-wow-delay=".4s">
+                    </div>
+                </div>       
+   <br/>  
+ 
+            <center>
+ <div id="login_click">
+        <a id="btlogin" href="help.html">想了解更多？看看帮助吧~</a>
+        </div>
+</center>
+<br> </br>	<br> </br>
+<div id="footer" style="background-color:#FFF;Color:#BEBEBE;clear:both;text-align:center;">版权所有 © ycyvirtual@gmail.com</div>
+       
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/google-map.min.js" type="text/javascript"></script>
+
+    </body>
+</html>

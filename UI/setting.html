@@ -1,0 +1,406 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="zh" type="basic">
+<head>
+<script src="https://shishang.easydo.cn/__cache__/workonline/1552611292/model.js"></script><script src="https://shishang.easydo.cn/__cache__/workonline/1552611292/jquery.tablednd.js"></script><script async="" src="https://shishang.easydo.cn/__cache__/workonline/1552611292//i18next.js?_=1554180496413"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="js/Manage/flXHR.js"></script><script src="js/Manage/notify.js"></script><script src="js/Manage/chat.js"></script><script src="js/Manage/templates.js"></script><script src="js/Manage/ui.js"></script><script src="js/Manage/unread_counter.js"></script><script src="js/Manage/utils.js"></script><script src="js/Manage/init.js"></script><script src="js/Manage/fileprogress.js"></script><script src="js/Manage/tus.js"></script><script src="js/Manage/jquery.filedrop.js"></script><script src="js/Manage/paste_image.i18n.js"></script><script src="js/Manage/viewer.js"></script><script src="js/Manage/core.js"></script><script src="js/Manage/jquery.edo.selectfile.js"></script><script src="js/Manage/jquery.simplemodal.js"></script><script src="js/Manage/mqtt.js"></script><script src="js/Manage/i18n.js"></script><script src="js/Manage/msgclient.js"></script><script src="js/Manage/rtc.js"></script><script src="js/Manage/filerepos.js"></script>
+    <title>设置</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="shortcut icon" type="image/x-icon" href="https://shishang.easydo.cn/__cache__/workonline/1552611292//img/favicon.ico">
+    <link rel="root-url" href="https://shishang.easydo.cn/default">
+    <link rel="cache-url" href="https://shishang.easydo.cn/__cache__/workonline/1552611292/">
+    <link rel="packages-cache-url" href="https://shishang.easydo.cn/default/packages/">
+    <link type="text/css" rel="stylesheet" href="css/Manage/zopen-component.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/Manage/zopen-template.css" media="all">
+    <!--<base href="https://shishang.easydo.cn/default/teamspace/section1/">--><base href=".">
+    <script charset="utf-8" src="js/Manage/zopen.core.js"></script><style type="text/css">  .JColResizer{table-layout:fixed;} .JColResizer > tbody > tr > td, .JColResizer > tbody > tr > th{overflow:hidden}  .JPadding > tbody > tr > td, .JPadding > tbody > tr > th{padding-left:0!important; padding-right:0!important;} .JCLRgrips{ height:0px; position:relative;} .JCLRgrip{margin-left:-5px; position:absolute; z-index:5; } .JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: col-resize;top:0px} .JCLRLastGrip{position:absolute; width:1px; } .JCLRgripDrag{ border-left:1px dotted black;	} .JCLRFlex{width:auto!important;} .JCLRgrip.JCLRdisabledGrip .JColResizer{cursor:default; display:none;}</style><style type="text/css">  .JColResizer{table-layout:fixed;} .JColResizer > tbody > tr > td, .JColResizer > tbody > tr > th{overflow:hidden}  .JPadding > tbody > tr > td, .JPadding > tbody > tr > th{padding-left:0!important; padding-right:0!important;} .JCLRgrips{ height:0px; position:relative;} .JCLRgrip{margin-left:-5px; position:absolute; z-index:5; } .JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: col-resize;top:0px} .JCLRLastGrip{position:absolute; width:1px; } .JCLRgripDrag{ border-left:1px dotted black;	} .JCLRFlex{width:auto!important;} .JCLRgrip.JCLRdisabledGrip .JColResizer{cursor:default; display:none;}</style>
+  <link media="all" href="css/Manage/chat.css" rel="stylesheet" type="text/css"><script src="js/Manage/checkplayer.js" type="text/javascript"></script><script src="js/Manage/flensed.js" type="text/javascript"></script></head>
+  <body class="view-tabular type-folder">
+    <div id="visual-wrapper">
+      <div id="header">
+        <div class="actionMenu">
+    <ul class="topNavTabs" id="site-navbar">
+        <li>
+            <a href="workspace.html">工作台</a>
+        </li>
+        <li>
+            <a href="manage.html">日常文档库</a>
+        </li>
+        <li class="selected">
+            <a href="setting.html">设置</a>
+        </li>
+	<li>
+            <a href="index.html">返回首页</a>
+        </li>
+        
+        <li style="display:none;" class="collapsed">
+            <dl class="actionMenu">
+            <dt class="actionMenuHeader KSSActionMenu">
+                <button class="navbar-toggle KSSActionMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </dt>
+            <dd class="actionMenuContent KSSActionMenuContent hidden" style="right: 0;"></dd>
+        </dl></li>
+    </ul>
+ 
+
+        </div>
+        <div id="header-right" class="topNavTabs">
+    <ul>
+        
+            <li id="notify-center">
+<dl class="actionMenu">
+  <dt class="actionMenuHeader KSSActionMenu" id="notify-trigger">
+    <a id="current_site" href="javascript:;">
+      <span class="current_site_title"></span>
+          <i class="icon-bell"></i>
+          <span class="site_msg_count unmsg_num">0</span>
+    </a>
+  </dt>
+      <script>var channels = [{"name": "workflow", "title": "\u6d41\u7a0b"}, {"name": "sendme", "title": "\u53d1\u9001\u7ed9\u6211\u7684"}, {"name": "mentioned", "title": "\u63d0\u5230\u6211\u7684"}, {"name": "announcement", "title": "\u516c\u544a"}, {"name": "comment", "title": "\u8bc4\u8bba"}, {"name": "subscribe", "title": "\u8ba2\u9605"}, {"name": "default", "title": "\u5176\u4ed6"}]</script>
+            
+            
+              <div id="msg-history" style="height:200px;">          <div class="ui_conversation_manager">            <div class="conversations"></div>          </div></div>
+            
+          
+        
+      
+     
+</dl>
+<div id="xmpp-sound"></div>
+<script>var root_url = $("[rel=root-url]").attr("href");</script>
+<script type="text/javascript">
+// 关闭飘窗
+$('body').on('click', 'a[name="notify"]', function(event) {
+    var fadeOutDuration = 500,
+        helper = $(this).parents('div.jquery-message');
+    helper.animate(
+        { opacity: 0 },
+        fadeOutDuration,
+        function() {
+            $(this).hide();
+            $(this).remove();
+        }
+    );
+});
+</script>
+<script type="text/javascript">
+  $('body').on('click', '.chatSelectSubmit', function(){
+    var data = $(this.form).serialize();
+    $(this).kss({
+        url: '@@chatAction', params: data });
+  });
+</script>
+</li>
+
+
+            
+            <script>var sites_info = []</script>
+            <script>var current_site_info = {"name": "default", "title": ""}</script>
+            <script>var other_site = {"title": "\u5176\u4ed6\u7ad9\u70b9"}</script>
+        
+                
+        <li style="margin-right:10px;_margin-right:7px"></li>
+    </ul>
+
+</div>
+
+        <div id="site-actions">
+    <div id="site-new">
+        <dl class="actionMenu">
+            <dt class="actionMenuHeader KSSActionMenu">
+                <i class="fa new" title="快捷添加"></i>
+                <span class="arr_d"><em class="b1"></em><em class="b2"></em><em class="b3"></em></span>
+            </dt>
+            <dd class="actionMenuContent KSSActionMenuContent hidden">
+                <ul kssattr:url="https://shishang.easydo.cn/default/@@targetContents">
+                    <li>
+                        <a class="kss" data-param1="uploadFile" href="https://shishang.easydo.cn/default/teamspace/section1/#" onclick="uploadMode(this);">上传文件</a>
+                    </li>
+                    <li>
+                        <a class="kssattr-param1-newDocument KSSActionServer" href="https://shishang.easydo.cn/default/teamspace/section1/#">新建文件</a>
+                    </li>
+                    <li>
+                        <a kssattr:url="@@issue_workflow_pop" kssattr:param1="desk" class="KSSActionServer" href="https://shishang.easydo.cn/default/teamspace/section1/#">提交表单</a>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div id="site-searchbox">
+        <form name="searchform" action="result.html">
+            <div class="searchBox" id="search-box">
+              <input type="text" value="" placeholder="全站搜索" name="text" id="search" title="全站搜索" autocomplete="off">
+              <input type="submit" id="magnifier" value="" title="搜索">
+              <i class="fa fa-close hand hidden"></i>
+            </div>
+        </form>
+    </div>
+
+</div>
+        <div class="visualClear"><!-- --></div>
+      </div>
+      <div id="visual-content">
+        <div id="top"></div>
+        <div id="site-subnav"><div class="subnav" id="sub-navbar">
+    
+</div>
+</div>
+        <table id="columns" class=" leftcol">
+          <tbody>
+            <tr>
+              <td id="left">
+                <div class="visualPadding">
+            <div id="" class="panel kss-com">
+               <div class="panel-body" style=""><div id="" class="ui-tree kss-com"><div id="nav_2bc2f36fcc65891a12488ddf2256cbd4" class="navtree" kssattr:templ="templ_2bc2f36fcc65891a12488ddf2256cbd4"><ul class="navTreeLevel0"><li class="navTreeItem"><a href="@zopen.site_config:root_settings?setup=switch" class="kss-com link selected"><i class="fa collapsed-icon"></i><i class="fa"></i>通用设置</a></li><li class="navTreeItem"><a href="@zopen.site_config:root_settings?setup=security" class="kss-com link"><i class="fa collapsed-icon"></i><i class="fa"></i>安全设置</a></li><li class="navTreeItem"><a href="@zopen.site_config:recycle" class="kss-com link"><i class="fa collapsed-icon"></i><i class="fa"></i>偏好设置</a></li><li class="navTreeItem"><a href="@zopen.site_config:root_settings?setup=basic" class="kss-com link"><i class="fa collapsed-icon"></i><i class="fa"></i>其他设置</a></li><li class="navTreeItem"><a href="@zopen.site_config:all_rules" class="kss-com link"><i class="fa collapsed-icon"></i><i class="fa"></i>高级设置</a></li></ul>
+              </div>
+           </div></div>
+                
+            </div>
+            </div>
+              </td>
+              <td id="main">
+                <div id="viewlet-above-content"></div>
+                <div id="region-content" class="documentContent">
+                  <span id="portal-message"></span>
+                  <div id="content"><form class="kss-com kss KSSLoad" action="@zopen.site_config:root_settings" data-loading="..." method="post"><br><div><div class="field"><label><i class="required">*</i>工作流默认通知方式</label><p class="formHelp">新的通知默认以哪种方式通知用户，用户可以在个人设置中调整</p><input type="checkbox" checked="checked" name="workflow_notify_methods:list" value="message" onchange="" id="for_multi_field_内置消息"><label for="for_multi_field_内置消息" class="checkbox">内置消息</label> <br><input type="checkbox" checked="checked" name="workflow_notify_methods:list" value="email" onchange="" id="for_multi_field_邮件"><label for="for_multi_field_邮件" class="checkbox">邮件</label> <br><input type="checkbox" name="workflow_notify_methods:list" value="im" onchange="" id="for_multi_field_实时IM"><label for="for_multi_field_实时IM" class="checkbox">实时IM</label> <br></div></div><div><div class="field"><label>允许用户切换皮肤</label><br><input type="hidden" name="allow_switch_skin:default" value="False"><input type="checkbox" checked="checked" name="allow_switch_skin" value="True" onchange=""> 是</div></div><div><div class="field"><label><i class="required">*</i>站点默认皮肤</label><select name="skin:list" onchange=""><option value="">默认皮肤</option><option value="zopen.skin:red">红色皮肤</option><option value="zopen.skin:green">绿色皮肤</option><option value="zopen.skin:rose_red">玫红皮肤</option><option value="zopen.skin:default">水墨蓝皮肤</option><option value="zopen.skin:pink">粉色皮肤</option><option value="zopen.skin:blue_green">青色皮肤</option><option value="zopen.skin:brown">棕色皮肤</option><option value="zopen.skin:violet">紫色皮肤</option><option value="zopen.skin:black">黑色皮肤</option></select></div></div><div><div class="field"><label>开启聊天功能</label><br><input type="hidden" name="allow_chat:default" value="False"><input type="checkbox" checked="checked" name="allow_chat" value="True" onchange=""> 是</div></div><div><div class="field"><label><i class="required">*</i>站点默认语言</label><p class="formHelp">通知存储的默认语言</p><input type="radio" name="lang:list" value="en" id="for_field_英文" onchange=""><label for="for_field_英文" class="radio">英文</label> <br><input type="radio" name="lang:list" checked="checked" value="zh" id="for_field_中文" onchange=""><label for="for_field_中文" class="radio">中文</label> <br></div></div><div><div class="field"><label><i class="required">*</i>选择人员时人员排序</label><br><select name="person_sort:list" onchange=""><option value="number">序号</option><option selected="selected" value="-number">序号(降序)</option><option value="full_name">姓名</option><option value="-full_name">姓名(降序)</option><option value="ou">部门</option><option value="-ou">部门(降序)</option></select></div></div><div><div class="field"><label><i class="required">*</i>文件默认大版本号</label><p class="formHelp">文件定版的默认大版本号，根据公司自己的版本管理规则来定</p><input type="text" name="default_major_version" value="1" onchange="" placeholder="文件定版的默认大版本号，根据公司自己的版本管理规则来定"></div></div><div><div class="field"><label>允许授权在线编辑人</label><br><input type="hidden" name="enable_online_editor_role:default" value="False"><input type="checkbox" name="enable_online_editor_role" value="True" onchange=""> 是</div></div><div><div class="field"><label>允许水印PDF下载</label><br><input type="hidden" name="allow_waterprint_pdf:default" value="False"><input type="checkbox" checked="checked" name="allow_waterprint_pdf" value="True" onchange=""> 是</div></div>
+        <script type="text/javascript">
+            load('jquery.tablednd.js', function(){
+                $('.growingTable').tableDnD({dragHandle: '.dragHandle'});
+            });
+            $(function(){ dateTimePickerInit();initTinyMCE(); });
+         </script><input type="hidden" name="form_name" value="switch_form"><div class="formActions"><input type="hidden" name="form.submitted" value="1"><input type="submit" style="" class="submit button default" name="form.button.save" value="保存"></div></form>
+    
+        <script>var assistant_options = {"site": {"url": "https://shishang.easydo.cn/default", "name": "\u6613\u5de5\u4f5c"}, "lan_p2p": false, "upload_server": "https://api.easydo.cn/_upload", "user": {"id": "users.admin", "name": "\u7ba1\u7406\u5458"}, "download": {"windows": "/__cache__/assistent/EDOAssistentSetup.exe?1705.exe", "win64": "/__cache__/assistent/EDOAssistentSetup_x64.exe?1705.exe", "mac": "/__cache__/assistent/EdoAssistent.pkg?1705", "linux": "/__cache__/assistent/EDOAssistent.zip?1705"}, "message_server": "https://api.easydo.cn/_message", "account": "shishang", "oc_server": "https://oc-api.easydo.cn/", "resumable": true, "server": "https://wo-api.easydo.cn", "instance": "default", "token": "9e6b0e41a580b681f7225fe8abb47bdf", "version": 5, "min_builds": {"mac": 1705, "sync_win_x32": 64, "sync_win_x64": 64, "linux": 1705, "windows": 1705, "win64": 1705}};</script>
+        <script type="text/template" id="tpl_assistant_launch_prompt">
+    <div id="bPopup-assistant-error" class="popup-container bPopup-assistant-error" width="600" height="400">
+        <a class="modalCloseImg b-close" title="Close"></a>
+        <div class="simplemodal-wrap">
+            <h3>请启动桌面助手来完成此操作</h3>
+            <p>桌面助手可增强浏览器的功能，如可靠上传、文档编辑、映射盘、桌面提醒等。</p>
+            <div class="clearfix" style="width: 90%;height:100%;margin-bottom:2em;padding:2em 2em  0 2em;">
+                <div class="pull-left" style="width:44%;padding: 1em 1em 0 1em;">
+                    <p>已经安装桌面助手？</p>
+                    <p><a href="edo-ast://start"
+                          class="button mini">一键启动</a></p>
+                    <p>可以在开始菜单中找到 桌面助手，点击 启动桌面助手。</p>
+                </div>
+                <div class="pull-left" style="width:44%;padding:1em 0 2em 2em;border-left:solid 1px #aaa;">
+                    <p><a class="button mini"
+                          href="{{download_link}}"
+                          target="_blank"
+                          onclick="if(get_assistant().platform==='linux'){$(document).kss($('base').attr('href')+'@zopen.desks:install_linux_ast'); return false}">下载安装</a></p>
+                    <div class="KSSShowHideArea">
+                        <a class="KSSShowHideAction"
+                           href="javascript:void(0);">其他版本</a>
+                        <div class="KSSShowHideTarget hidden">
+                            <ul class="disc_ul">
+                                <li><a
+    href="{{assistant.downloads.win64}}" target="_blank">Windows 版 (64位)</a></li>
+                                <li><a
+    href="{{assistant.downloads.windows}}" target="_blank">Windows 版 (32位)</a></li>
+                                <li><a
+    href="{{assistant.downloads.mac}}" target="_blank">Mac 版</a></li>
+                                <li><a
+    href="{{assistant.downloads.linux}}"
+    onclick="if(get_assistant().platform==='linux'){$(document).kss($('base').attr('href')+'@zopen.desks:install_linux_ast'); return false}">Linux 版</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</script>
+        <script type="text/template" id="tpl_assistant_select_fail">
+                <div id="bPopup-assistant-modal" class="popup-container bPopup-assistant-modal" width="450" height="300">
+                    <a class="modalCloseImg b-close" title="Close"></a>
+                    <div class="simplemodal-wrap">
+                        <h2>下载该文件</h2>
+                        <p>
+                            您没有
+                            <a href="javascript:void(0);"
+    onclick="closeModal(); assistant._fail_callback(); return false;">启动桌面助手</a>
+                            ，不能高速下载。您可以通过浏览器直接下载：
+                        </p>
+                        <p><a class="button primary"
+    href="{{url}}">直接下载</a></p>
+                    </div>
+                </div>
+
+</script>
+        <script type="text/template" id="tpl_assistant_manual_upgrade">
+<div id="bPopup-assistant-mupgrade-modal" class="popup-container bPopup-assistant-modal" width="450" height="300">
+    <a class="modalCloseImg b-close" title="Close"></a>
+    <div class="simplemodal-wrap">
+        <h2>您的桌面助手需要升级</h2>
+        <div>发现有新版本的桌面助手，需要升级。</div>
+        <p><a class="button primary" href="{{download_url}}">下载</a></p>
+    </div>
+</div>
+
+</script>
+        <input type="hidden" id="desktop_notification_enabled_i18n" value="桌面消息提醒已开启">
+        <script>
+            if(typeof assistant_options !== 'undefined'){
+                assistant_options.select_fail_template = Handlebars.compile($("#tpl_assistant_select_fail").html());
+                assistant_options.manual_upgrade_template = Handlebars.compile($("#tpl_assistant_select_fail").html());
+                assistant_options.launch_prompt_template = Handlebars.compile($('#tpl_assistant_launch_prompt').html());
+                assistant_options.launch_prompt_callback = function(n){ // n is not important
+                    $( assistant_options.launch_prompt_template({
+                        assistant: assistant,
+                        download_link: assistant.downloads[assistant.platform]
+                    })).bPopup({
+                        modalClose:false,
+                        follow:[false,false],
+                        opacity:0.5,
+                        closeClass:"b-close",
+                        position:['auto','auto']
+                    }, function(){
+                        if (['linux', 'mac'].indexOf(get_assistant().platform) !== -1) {
+                            $('#bPopup-assistant-error a[href="edo-ast://start"]').hide();
+                        }
+                        $('#bPopup-assistant-error').find('a:not(.b-close, .KSSShowHideAction)').click(function(e){
+                            closeModal();
+                            return true;
+                        });
+                    });
+                };
+                assistant_options.select_fail_callback = function(o){
+                    $(assistant_options.select_fail_template(o)).bPopup({
+                        modalClose:false,
+                        follow:[false,false],
+                        opacity:0.5,
+                        closeClass:"b-close",
+                        position:['auto','auto']
+                    }, function(){
+                        $('#bPopup-assistant-modal').find('a:not(.b-close)').click(function(e){
+                            closeModal();
+                            return true;
+                        });
+                    });
+                };
+                assistant_options.messaging_enabled_callback = function(){
+                    message_float($('input#desktop_notification_enabled_i18n').val());
+                };
+                assistant_options.manual_upgrade_callback = function(o){
+                    $(assistant_options.manual_upgrade_template(o)).bPopup({
+                        modalClose: false,
+                        follow: [false, false],
+                        opacity: 0.5,
+                        closeClass: 'b-close',
+                        position: ['auto', 'auto']
+                    }, function(){
+                        $('#bPopup-assistant-mupgrade-modal').find('a:not(.b-close)').click(function(e){
+                            closeModal();
+                            return true;
+                        });
+                    });
+                };
+            }
+        </script>
+    
+
+</div>
+                </div>
+              </td>
+              <td id="right">
+                <div class="visualPadding"><style type="text/css" media="all">#right { display: none; }</style></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="bottom"></div>
+      </div>
+      <div id="side"></div>
+    </div>
+    <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+    <script charset="utf-8" src="/__cache__/workonline/1552611292//zopen.js"></script>
+    <script type="text/javascript">
+        if ('False' == 'False (Google is dead)') {
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-24758627-1']);
+            _gaq.push(['_setDomainName', 'easydo.cn']);
+            _gaq.push(['_setAllowHash', 'false']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
+    <script type="text/javascript">load(['model.js']);</script>
+    <script type="text/javascript">EDO.resource_version["zopen.message"]="1.7.1";
+if('undefined'=== typeof EDO){EDO = {}; }
+EDO.msg_options = {"account": "shishang", "enable_chat": true, "token": "9e6b0e41a580b681f7225fe8abb47bdf", "user": {"id": "users.admin", "name": "\u7ba1\u7406\u5458"}, "debug": false, "expand": true};
+EDO.msg_instance = 'default';
+EDO.chat_groups = [];
+EDO.notify_channels = [{"name": "workflow", "title": "\u6d41\u7a0b"}, {"name": "sendme", "title": "\u53d1\u9001\u7ed9\u6211\u7684"}, {"name": "mentioned", "title": "\u63d0\u5230\u6211\u7684"}, {"name": "announcement", "title": "\u516c\u544a"}, {"name": "comment", "title": "\u8bc4\u8bba"}, {"name": "subscribe", "title": "\u8ba2\u9605"}, {"name": "default", "title": "\u5176\u4ed6"}];
+EDO.servers = {"viewer": "https://api.easydo.cn/_viewer", "org": "https://oc-api.easydo.cn/", "message": "https://api.easydo.cn/_message"};
+
+
+if(EDO.isMobile || EDO.template_type === 'basic'){
+    $(document).ready(function() {
+      $.getJSON($('[rel="packages-cache-url"]').attr('href') + '/zopen.message/resources/i18n.json?v=' + EDO.resource_version['zopen.message'], function(obj) {
+        // Ensure namespace existence
+        if (typeof window.EDO === 'undefined') {
+          window.EDO = {};
+        }
+
+        // Actual execution
+        var requirements = ['rtc.js', 'msgclient.js', 'zopen.message:i18n.js'],
+          msg_options = EDO.msg_options;
+        if ('WebSocket' in window) {
+          requirements.push('mqtt.js');
+        } else {
+          requirements.push('socketio.js');
+        }
+        if (msg_options.enable_chat) {
+          requirements = requirements.concat(['js/Manage/jquery.simplemodal.js', 'js/Manage/jquery.edo.selectfile.js',
+            EDO.servers.viewer + '/static/core.js',
+            EDO.servers.viewer + '/static/viewer.js',
+            'paste_image.i18n.js'
+          ]);
+        }
+        load(requirements, function() {
+          load(['zopen.message:init.js'], function(){
+            if (window.EDO && !EDO.isMobile) {
+              // 初始化桌面版
+              $(document).on('message:inited', function() {
+                load([
+                  'zopen.message:notify.js',
+                  'zopen.message:unread_counter.js'
+                ], function() {
+                  message.load_templates(function() {
+                    message.notify.init(EDO.notify_channels);
+                    message.counter.init('#current_site .site_msg_count');
+                    if (EDO.msg_options.enable_chat) {
+                      message.chat.init();
+                    }
+                  });
+                });
+              });
+            } else if (window.EDO && EDO.isMobile) {
+              // 移动端已经有专门的通知入口，隐藏桌面版的通知入口
+              $('#notify-center').hide();
+            }
+          });
+        });
+      });
+    });
+}
+;
+$(document).ksson('rtc:refused', {"delay": 0, "kss": "@@login_refused"}, {});
+$(document).ksson('rtc:killed', {"delay": 0, "kss": "https://shishang.easydo.cn/default/@zopen.user_setting:login_again"}, {});</script>
+  
+
+
+<a href="javascript:;" id="right-aside" style="background-color: rgb(25, 146, 212); color: rgb(255, 255, 255); display: none; font-size: 20px; padding: 10px 20px; position: fixed; right: 0px; top: 30%; opacity: 0.5; z-index: 100; background-position: initial initial; background-repeat: initial initial;"><i class="fa fa-angle-left"></i></a><a href="javascript:;" id="left-aside" style="background-color: rgb(25, 146, 212); color: rgb(255, 255, 255); display: none; font-size: 20px; padding: 10px 20px; position: fixed; left: 0px; top: 30%; opacity: 0.5; z-index: 100; background-position: initial initial; background-repeat: initial initial;"><i class="fa fa-angle-right"></i></a></body></html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="zh" type="basic"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="js/Manage/flXHR.js"></script><script src="js/Manage/notify.js"></script><script src="js/Manage/chat.js"></script><script src="js/Manage/templates.js"></script><script src="js/Manage/ui.js"></script><script src="js/Manage/unread_counter.js"></script><script src="js/Manage/utils.js"></script><script src="js/Manage/init.js"></script><script src="js/Manage/fileprogress.js"></script><script src="js/Manage/tus.js"></script><script src="js/Manage/jquery.filedrop.js"></script><script src="js/Manage/paste_image.i18n.js"></script><script src="js/Manage/viewer.js"></script><script src="js/Manage/core.js"></script><script src="js/Manage/jquery.edo.selectfile.js"></script><script src="js/Manage/jquery.simplemodal.js"></script><script src="js/Manage/mqtt.js"></script><script src="js/Manage/i18n.js"></script><script src="js/Manage/msgclient.js"></script><script src="js/Manage/rtc.js"></script><script src="js/Manage/filerepos.js"></script>
+    <title>日常文档库</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="shortcut icon" type="image/x-icon" href="https://shishang.easydo.cn/__cache__/workonline/1552611292//img/favicon.ico">
+    <link rel="root-url" href="https://shishang.easydo.cn/default">
+    <link rel="cache-url" href="https://shishang.easydo.cn/__cache__/workonline/1552611292/">
+    <link rel="packages-cache-url" href="https://shishang.easydo.cn/default/packages/">
+    <link type="text/css" rel="stylesheet" href="css/Manage/zopen-component.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/Manage/zopen-template.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/Manage/search.css"/>
+    <link type="text/css" rel="stylesheet" href="css/Manage/mricode.pagination.css"/>
+    <script src="js/Manage/jquery-2.1.4.min.js" type="application/javascript"></script>
+    <script src="js/Manage/mricode.pagination.js" type="application/javascript"></script>
+    <script charset="utf-8" src="js/Manage/zopen.core.js"></script><style type="text/css">  .JColResizer{table-layout:fixed;} .JColResizer > tbody > tr > td, .JColResizer > tbody > tr > th{overflow:hidden}  .JPadding > tbody > tr > td, .JPadding > tbody > tr > th{padding-left:0!important; padding-right:0!important;} .JCLRgrips{ height:0px; position:relative;} .JCLRgrip{margin-left:-5px; position:absolute; z-index:5; } .JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: col-resize;top:0px} .JCLRLastGrip{position:absolute; width:1px; } .JCLRgripDrag{ border-left:1px dotted black;	} .JCLRFlex{width:auto!important;} .JCLRgrip.JCLRdisabledGrip .JColResizer{cursor:default; display:none;}</style>
+    <script type="text/javascript">
+        window.location.href = "index.html";
+    </script>
+  <link media="all" href="css/Manage/chat.css" rel="stylesheet" type="text/css"><script src="js/Manage/checkplayer.js" type="text/javascript"></script><script src="js/Manage/flensed.js" type="text/javascript"></script></head>
+  <body class="view-tabular type-folder">
+    <div id="visual-wrapper">
+      <div id="header">
+        <div class="actionMenu">
+    <ul class="topNavTabs" id="site-navbar">
+        <li>
+            <a href="workspace.html">工作台</a>
+        </li>
+        <li class="selected">
+            <a href="manage.html">日常文档库</a>
+        </li>
+        <li>
+            <a href="setting.html">设置</a>
+        </li>
+	<li>
+            <a href="index.html">返回首页</a>
+        </li>
+        
+<li style="display:none;" class="collapsed">
+            <dl class="actionMenu">
+            <dt class="actionMenuHeader KSSActionMenu">
+                <button class="navbar-toggle KSSActionMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </dt>
+            <dd class="actionMenuContent KSSActionMenuContent hidden" style="right: 0;"></dd>
+        </dl></li>
+    </ul>
+ 
+
+        </div>
+        <div id="header-right" class="topNavTabs">
+    <ul>
+        
+            <li id="notify-center">
+<dl class="actionMenu">
+  <dt class="actionMenuHeader KSSActionMenu" id="notify-trigger">
+    <a id="current_site" href="javascript:;">
+      <span class="current_site_title"></span>
+          <i class="icon-bell"></i>
+          <span class="site_msg_count unmsg_num">0</span>
+    </a>
+  </dt>
+      <script>var channels = [{"name": "workflow", "title": "\u6d41\u7a0b"}, {"name": "sendme", "title": "\u53d1\u9001\u7ed9\u6211\u7684"}, {"name": "mentioned", "title": "\u63d0\u5230\u6211\u7684"}, {"name": "announcement", "title": "\u516c\u544a"}, {"name": "comment", "title": "\u8bc4\u8bba"}, {"name": "subscribe", "title": "\u8ba2\u9605"}, {"name": "default", "title": "\u5176\u4ed6"}]</script>
+            </td>
+            <td style="border-left:1px solid #E5ECF9;height:100%;width:580px;vertical-align:top;width: 85%;">
+              <div id="msg-history" style="height:200px;">          <div class="ui_conversation_manager">            <div class="conversations"></div>          </div></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     </dd>
+</dl>
+<div id="xmpp-sound"></div>
+<script>var root_url = $("[rel=root-url]").attr("href");</script>
+<script type="text/javascript">
+// 关闭飘窗
+$('body').on('click', 'a[name="notify"]', function(event) {
+    var fadeOutDuration = 500,
+        helper = $(this).parents('div.jquery-message');
+    helper.animate(
+        { opacity: 0 },
+        fadeOutDuration,
+        function() {
+            $(this).hide();
+            $(this).remove();
+        }
+    );
+});
+</script>
+<script type="text/javascript">
+  $('body').on('click', '.chatSelectSubmit', function(){
+    var data = $(this.form).serialize();
+    $(this).kss({
+        url: '@@chatAction', params: data });
+  });
+</script>
+</li>
+
+
+            
+            <script>var sites_info = []</script>
+            <script>var current_site_info = {"name": "default", "title": ""}</script>
+            <script>var other_site = {"title": "\u5176\u4ed6\u7ad9\u70b9"}</script>
+        
+                
+        <li style="margin-right:10px;_margin-right:7px"></li>
+    </ul>
+
+</div>
+
+        <div id="site-actions">
+    <div id="site-new">
+        <dl class="actionMenu">
+            <dt class="actionMenuHeader KSSActionMenu">
+                <i class="fa new" title="快捷添加"></i>
+                <span class="arr_d"><em class="b1"></em><em class="b2"></em><em class="b3"></em></span>
+            </dt>
+            <dd class="actionMenuContent KSSActionMenuContent hidden">
+                <ul class="actionMenuContent KSSActionMenuContent hidden" id="new-actions" kssattr:url="https://shishang.easydo.cn/default/teamspace/section1/@@ajax_content_actions">
+            <li>
+                <a href="" class="kssattr-param1-newFolder" style="padding: 2px 15px;">
+                    <i style="color:#FFB74D;width:15px;"></i>
+                    <span>PDF 文档</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="edit.html" class="kssattr-param1-newDocument" data-ext="docx" style="padding: 2px 15px;">
+                    <i style="color:#5C6BC0;width:15px;"></i>
+                    <span>Word 文档(.docx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="pptx" style="padding: 2px 15px;">
+                    <i style="color:#FF6E40;width:15px;"></i>
+                    <span>PowerPoint 文档(.pptx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="xlsx" style="padding: 2px 15px;">
+                    <i style="color:#43A047;width:15px;"></i>
+                    <span>Excel 文档(.xlsx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="html" style="padding: 2px 15px;">
+                    <i style="color:#BDBDBD;width:15px;"></i>
+                    <span>图片</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="md" style="padding: 2px 15px;">
+                    <i style="color:#BDBDBD;width:15px;"></i>
+                    <span>音频</span>
+                </a>
+            </li>
+            
+                <li>
+                    <a href="" class="kssattr-param1-newDocument" data-ext="template" style="padding: 2px 15px;">
+                        <i style="width:15px;"></i>
+                        <span>视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="kssattr-param1-newShortcut" style="padding: 2px 15px;">
+                        <i style="color:#4E6D86;width:15px;"></i>
+                        <span>压缩文件</span>
+                    </a>
+                </li>       
+        </ul>
+            </dd>
+        </dl>
+    </div>
+    <div id="site-searchbox">
+        <form name="searchform" action="result.html">
+            <div class="searchBox" id="search-box">
+              <input type="text" value="" placeholder="全站搜索" name="text" id="search" title="全站搜索" autocomplete="off">
+              <input type="submit" id="magnifier" value="" title="搜索">
+              <i class="fa fa-close hand hidden"></i>
+            </div>
+        </form>
+    </div>
+
+</div>
+        <div class="visualClear"><!-- --></div>
+      </div>
+      <div id="visual-content">
+        <div id="top"></div>
+        <div id="site-subnav"><div class="subnav" id="sub-navbar">
+    <ul class="nav-tabs">
+        
+        <li class="selected">
+            <a href="manage.html">Word</a>
+        </li>
+	<li>
+            <a href="manage.html">Excel</a>
+        </li>
+	<li>
+            <a href="manage.html">PPT</a>
+        </li>
+	<li>
+            <a href="manage.html">PDF</a>
+        </li>
+	<li>
+            <a href="manage.html">图片</a>
+        </li>
+	<li>
+            <a href="manage.html">音频</a>
+        </li>
+	<li>
+            <a href="manage.html">视频</a>
+        </li>
+	<li>
+            <a href="manage.html">其它</a>
+        </li>
+        
+    </ul>
+</div>
+</div>
+        <div class="JCLRgrips" style="width: 1519px;"><div class="JCLRgrip" style="left: 195px; height: 674px;"><div class="JColResizer"></div></div><div class="JCLRgrip JCLRdisabledGrip" style="left: 1201.4px; height: 674px;"><div class="JColResizer"></div></div><div class="JCLRgrip JCLRLastGrip" style="left: 1519.8px; height: 674px;"></div></div><table id="columns" class="leftcol rightcol JColResizer">
+          <tbody>
+            <tr>
+              <td id="main" style="">
+<div class="container">
+            <div style="display:table">
+                <div style="display: table-row" class="searchRow">
+                        <div style="display: table-cell" class="sblock">
+                    <span>
+                    </span>
+                        </div>
+                        <div style="display: table-cell" class="searchCell">
+                    <span class="link">
+                        <a rel="noreferrer" href="C:\Users\desktop\个人...智能管理.doc">个人...智能<font color="red">管理</font>.doc</a>
+                        <span style="display: block;display: inline-block;margin-left: 7px;">
+                          <span class="icon" style="background-image: url(images/folder.png)"></span>
+                      </span>
+                    </span>
+
+                            <span class="info">
+                    <span class="size">36 KB&nbsp</span>
+                    <span class="upload">&nbsp2019年01月23日 21时58分&nbsp</span>
+                    <span class="home"><a
+                            href="C:\Users\desktop">&nbspC:\Users\desktop</a></span>
+                </span>
+                        </div>
+                    </div>
+                <div style="display: table-row" class="searchRow">
+                        <div style="display: table-cell" class="sblock">
+                    <span>
+                    </span>
+                        </div>
+                        <div style="display: table-cell" class="searchCell">
+                    <span class="link">
+                        <a rel="noreferrer" href="https://pan.baidu.com/s/1G9xPfJKCvs2Pr1v2QZgbVg">文档智能<font color="red">管理</font>...docx</a>
+                        <span style="display: block;display: inline-block;margin-left: 7px;">
+                          <span class="icon" style="background-image: url(images/folder.png)"></span>
+                      </span>
+                    </span>
+
+                            <span class="info">
+                    <span class="size">41 KB&nbsp</span>
+                    <span class="upload">&nbsp2019年01月23日 10时44分&nbsp</span>
+                    <span class="home"><a
+                            href="C:\Users\desktop">&nbspC:\Users\desktop</a></span>
+                </span>
+                        </div>
+                    </div>
+        </div>
+        
+<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+</div>
+
+              </td>
+              <td id="right" style="">
+                <div class="visualPadding"><div>
+    <div class="portlet actionMenu">
+        <div>
+            <button onclick="showMenu(this, &#39;#new-actions&#39;);" class="norelative button cancelBubble">
+                <i></i>
+                编辑
+                <i></i>
+            </button>
+            
+        <ul class="actionMenuContent KSSActionMenuContent hidden" id="new-actions" kssattr:url="https://shishang.easydo.cn/default/teamspace/section1/@@ajax_content_actions">
+            <li>
+                <a href="" class="kssattr-param1-newFolder" style="padding: 2px 15px;">
+                    <i style="color:#FFB74D;width:15px;"></i>
+                    <span>PDF 文档</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="docx" style="padding: 2px 15px;">
+                    <i style="color:#5C6BC0;width:15px;"></i>
+                    <span>Word 文档(.docx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="pptx" style="padding: 2px 15px;">
+                    <i style="color:#FF6E40;width:15px;"></i>
+                    <span>PowerPoint 文档(.pptx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="xlsx" style="padding: 2px 15px;">
+                    <i style="color:#43A047;width:15px;"></i>
+                    <span>Excel 文档(.xlsx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="html" style="padding: 2px 15px;">
+                    <i style="color:#BDBDBD;width:15px;"></i>
+                    <span>图片</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="md" style="padding: 2px 15px;">
+                    <i style="color:#BDBDBD;width:15px;"></i>
+                    <span>音频</span>
+                </a>
+            </li>
+            
+                <li>
+                    <a href="" class="kssattr-param1-newDocument" data-ext="template" style="padding: 2px 15px;">
+                        <i style="width:15px;"></i>
+                        <span>视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="kssattr-param1-newShortcut" style="padding: 2px 15px;">
+                        <i style="color:#4E6D86;width:15px;"></i>
+                        <span>压缩文件</span>
+                    </a>
+                </li>
+            
+            
+        </ul>
+    </div>
+
+    <div class="KSSFormArea">
+        <form id="totalFolderSearch" name="totalFolderSearch" class="KSSFormSubmit" action="https://shishang.easydo.cn/default/teamspace/section1/@@totalFolderSearch">
+            <div id="portal-search" class="folderSearch">
+                <dl class="portlet KSSShowHideArea KSSShowHideArea3">
+                    <dd class="portletItem KSSShowHideArea2 KSSShowHideTarget3">
+                        <div class="KSSSearchField1 KSSShowHideTarget2 hidden">
+                            <div class="searchBox" style="float: left;">
+                                <input type="text" class="searchBoxInput" id="searchTextInput" name="" placeholder="搜索" value="" autocomplete="off">
+                                <input type="submit" id="magnifier" value="" title="搜索">
+                            </div>
+                            <button type="button" style="padding: 4px; margin-left: 2px; line-height: 17px; cursor: pointer;" class="button minor kss KSSLoad discreet" title="高级搜索" data-param1="True" data-kss="https://shishang.easydo.cn/default/teamspace/section1/@@showHightSearch">
+                                &nbsp; <i class="fa fa-ellipsis-h"></i> &nbsp;
+                            </button>
+                            <div class="visualClear"><!-- --></div>
+                        </div>
+                        <div class="KSSSearchField2 KSSShowHideTarget2" id="KSSSearchField2"><table>
+    <tbody><tr>
+        <td colspan="2"><strong>高级搜索</strong></td>
+    </tr>
+    <tr>
+        <td>包含文字</td>
+        <td><input type="text" name="searchTextHight"></td>
+    </tr>
+    <tr>
+        <td>标题</td>
+        <td><input type="text" name="searchTitleHight"></td>
+    </tr>
+    <tr>
+        <td>编号</td>
+        <td><input type="text" name="identifierHight"></td>
+    </tr>
+    <tr>
+        <td>创建人</td>
+        <td>
+            <div class="personField"><span kssattr:spinnerid="kss-nothging" class="select-field SelectedMembers kssattr-inputname-creatorHight:list kssattr-multiple-True kssattr-grouporperson-persongroup kssattr-selectbranch- kssattr-selectdept-"><a href="#" class="kss PopSelector" data-multiple_selection="True" data-value="[]" data-kss="https://shishang.easydo.cn/default/teamspace/section1/@@displaySelectorMode" data-kssurl="" data-node="node-278" data-name="creatorHight:list" data-hidden="" data-include_disabled="False" data-group_or_person="persongroup" data-hide_team="False"><img title="添加..." src="/__cache__/workonline/1552611292/add_person.png"></a></span>
+</div>
+        </td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td>创建时间</td>
+        <td>
+
+<select style="width:100%;" onchange="this.nextSibling.style.display=this.options[this.selectedIndex].value=='self_define'&amp;&amp;'block'||'none'" name="createdHight">
+    
+        
+        
+            <option value="all">全部</option>
+        
+    
+    
+        
+        
+            <option value="today">今天</option>
+        
+    
+    
+        
+        
+            <option value="yesterday">昨天</option>
+        
+    
+    
+        
+        
+            <option value="cur_week">本周</option>
+        
+    
+    
+        
+        
+            <option value="last_week">上周</option>
+        
+    
+    
+        
+        
+            <option value="cur_month">本月</option>
+        
+    
+    
+        
+        
+            <option value="last_month">上月</option>
+        
+    
+    
+        
+        
+            <option value="self_define">选择确切时间</option>
+        
+    
+</select><div style="display:none">
+             <div>
+                 <div>从</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="createdHightFirst" value="">
+                 </div>
+             </div>
+             <div>
+                 <div>到</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="createdHightLast" value="">
+                 </div>
+             </div>
+         </div>
+</td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td>修改时间</td>
+        <td>
+
+<select style="width:100%;" onchange="this.nextSibling.style.display=this.options[this.selectedIndex].value=='self_define'&amp;&amp;'block'||'none'" name="modifiedHight">
+    
+        
+        
+            <option value="all">全部</option>
+        
+    
+    
+        
+        
+            <option value="today">今天</option>
+        
+    
+    
+        
+        
+            <option value="yesterday">昨天</option>
+        
+    
+    
+        
+        
+            <option value="cur_week">本周</option>
+        
+    
+    
+        
+        
+            <option value="last_week">上周</option>
+        
+    
+    
+        
+        
+            <option value="cur_month">本月</option>
+        
+    
+    
+        
+        
+            <option value="last_month">上月</option>
+        
+    
+    
+        
+        
+            <option value="self_define">选择确切时间</option>
+        
+    
+</select><div style="display:none">
+             <div>
+                 <div>从</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="modifiedHightFirst" value="">
+                 </div>
+             </div>
+             <div>
+                 <div>到</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="modifiedHightLast" value="">
+                 </div>
+             </div>
+         </div>
+</td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td>失效时间</td>
+        <td>
+
+<select style="width:100%;" onchange="this.nextSibling.style.display=this.options[this.selectedIndex].value=='self_define'&amp;&amp;'block'||'none'" name="expiredHight">
+    
+        
+        
+            <option value="unexpired">未失效</option>
+        
+    
+    
+        
+        
+            <option value="all">全部</option>
+        
+    
+    
+        
+        
+            <option value="self_define">选择确切时间</option>
+        
+    
+</select><div style="display:none">
+             <div>
+                 <div>从</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="expiredHightFirst" value="">
+                 </div>
+             </div>
+             <div>
+                 <div>到</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="expiredHightLast" value="">
+                 </div>
+             </div>
+         </div>
+</td>
+    </tr>
+    <tr>
+        <td>类型</td>
+        <td><select style="width:100%;" name="typeHight" class="typeHight">
+    
+        
+            <option selected="selected" value="all">全部文件</option>
+        
+        
+    
+    
+        
+        
+            <option value="folder">文件夹</option>
+        
+    
+    
+        
+        
+            <option value="office">办公文档</option>
+        
+    
+    
+        
+        
+            <option value="text">文本</option>
+        
+    
+    
+        
+        
+            <option value="image">图片文件</option>
+        
+    
+    
+        
+        
+            <option value="compress">压缩文件</option>
+        
+    
+    
+        
+        
+            <option value="media">音/视频文件</option>
+        
+    
+</select>
+
+<div style="display:none">
+             <div>
+                 <div>从</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="typeHightFirst" value="">
+                 </div>
+             </div>
+             <div>
+                 <div>到</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="typeHightLast" value="">
+                 </div>
+             </div>
+         </div>
+</td>
+    </tr>
+    <tr>
+        <td>大小</td>
+        <td>
+
+<select style="width:100%;" onchange="this.nextSibling.style.display=this.options[this.selectedIndex].value=='self_define'&amp;&amp;'block'||'none'" name="sizeHight">
+    
+        
+        
+            <option value="all">不限</option>
+        
+    
+    
+        
+        
+            <option value="0-1">0~1M</option>
+        
+    
+    
+        
+        
+            <option value="1-10">1M~10M</option>
+        
+    
+    
+        
+        
+            <option value="10-100">10M~100M</option>
+        
+    
+    
+        
+        
+            <option value="100">100M以上</option>
+        
+    
+</select><div style="display:none">
+             <div>
+                 <div>从</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="sizeHightFirst" value="">
+                 </div>
+             </div>
+             <div>
+                 <div>到</div>
+                 <div>
+                 <input type="text" kssattr:clear="true" class="PopCalendar" name="sizeHightLast" value="">
+                 </div>
+             </div>
+         </div>
+</td>
+    </tr>
+    <tr>
+        <td>历史版本</td>
+        <td>
+            <select name="history" style="width:100%;">
+                <option value="none">不搜索</option>
+                <option value="formal">搜索</option>
+            </select>
+        </td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td>状态</td>
+        <td>
+            <label>
+                <input type="checkbox" name="stateHight:list" value="modify.default" checked="">
+                <span>初始</span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="stateHight:list" value="modify.pending" checked="">
+                <span>审批中</span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="stateHight:list" value="modify.published" checked="">
+                <span>发布</span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="stateHight:list" value="modify.archived" checked="">
+                <span>存档</span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="stateHight:list" value="modify.abandoned">
+                <span>废弃</span>
+            </label>
+        </td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td>搜索附件</td>
+        <td>
+            <div>
+                <input id="attach-1" type="checkbox" value="true" name="search_attachment">
+                <label for="attach-1">是</label>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <div class="action KSSFormShowHide button-group mini" style="padding-top:5px">
+                <input type="hidden" name="objectTypeHight" value="File">
+                <button class="button primary" type="submit">
+                    <i class="fa fa-search"></i>
+                    搜索
+                </button>
+                
+            </div>
+            <div class="action hidden KSSFormShowHide" style="padding-top:5px">
+                <img src="/__cache__/workonline/1552611292/img/waiting.gif">
+            </div>
+        </td>
+    </tr>
+</tbody></table>
+</div>
+                    </dd>
+                </dl>
+            </div>
+            <input type="hidden" name="b_start:int" class="batch_start" value="0">
+            <input type="hidden" name="search_result_view" value="taggroup">
+            <input type="hidden" class="sort_index" name="sort_index" value="">
+            <input type="hidden" class="reverse" name="reverse" value="">
+            <input type="hidden" class="dimension" name="dimension" value="">
+            <input type="hidden" class="search_subtree" name="search_subtree" value="">
+        </form>
+    </div>    
+    <dl id="portal-tagsearch" class="portlet KSSShowHideArea" kssattr:formid="totalFolderSearch">
+                      <dt class="portletHeader deltaPortletHeader">
+                          <div class="portletHeaderContent">
+                              <span style="float: right;margin-top: 8px;color: #333;"><i data-kss="https://shishang.easydo.cn/default/teamspace/section1/@@setTagSearch" class="KSSShowHideTarget kss fa fa-cog fa-small hand hidden" data-param1="true" title="设置"></i></span>
+                              <span class="KSSShowHideAction">
+                                  
+                <span class="fa fa-angle-down expanded-icon KSSShowHideTarget hidden"><!-- --></span>
+     
+</div>
+</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="bottom"></div>
+      <div id="table-scroll" class="nicescroll-rails nicescroll-rails-vr" style="width: 8px; z-index: auto; cursor: default; position: absolute; top: 134px; left: 1182.6px; height: 84px; opacity: 1; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 6px; height: 84px; background-color: rgb(189, 189, 189); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div><div id="table-scroll-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 8px; z-index: auto; top: 210px; left: 203.6px; position: absolute; opacity: 1; cursor: default; display: block; width: 987px;"><div class="nicescroll-cursors" style="position: absolute; top: 0px; height: 6px; width: 982px; background-color: rgb(189, 189, 189); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px; left: 0px;"></div></div></div>
+      <div id="side"></div>
+    </div>
+    
+    <iframe name="print_frame" width="0" height="0" frameborder="0" src="./栏目1_files/saved_resource.html"></iframe>
+    <script charset="utf-8" src="js/Manage/zopen.js"></script>
+    <script type="text/javascript">
+        if ('False' == 'False (Google is dead)') {
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-24758627-1']);
+            _gaq.push(['_setDomainName', 'easydo.cn']);
+            _gaq.push(['_setAllowHash', 'false']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
+    <script type="text/javascript">load(['filerepos.js']);</script>
+    <script type="text/javascript">EDO.resource_version["zopen.message"]="1.7.1";
+if('undefined'=== typeof EDO){EDO = {}; }
+EDO.msg_options = {"account": "shishang", "enable_chat": true, "token": "5fe97b609185e02358a937a4018cef4f", "user": {"id": "users.admin", "name": "\u7ba1\u7406\u5458"}, "debug": false, "expand": true};
+EDO.msg_instance = 'default';
+EDO.chat_groups = [];
+EDO.notify_channels = [{"name": "workflow", "title": "\u6d41\u7a0b"}, {"name": "sendme", "title": "\u53d1\u9001\u7ed9\u6211\u7684"}, {"name": "mentioned", "title": "\u63d0\u5230\u6211\u7684"}, {"name": "announcement", "title": "\u516c\u544a"}, {"name": "comment", "title": "\u8bc4\u8bba"}, {"name": "subscribe", "title": "\u8ba2\u9605"}, {"name": "default", "title": "\u5176\u4ed6"}];
+EDO.servers = {"viewer": "https://api.easydo.cn/_viewer", "org": "https://oc-api.easydo.cn/", "message": "https://api.easydo.cn/_message"};
+
+
+if(EDO.isMobile || EDO.template_type === 'basic'){
+    $(document).ready(function() {
+      $.getJSON($('[rel="packages-cache-url"]').attr('href') + '/zopen.message/resources/i18n.json?v=' + EDO.resource_version['zopen.message'], function(obj) {
+        // Ensure namespace existence
+        if (typeof window.EDO === 'undefined') {
+          window.EDO = {};
+        }
+
+        // Actual execution
+        var requirements = ['rtc.js', 'msgclient.js', 'zopen.message:i18n.js'],
+          msg_options = EDO.msg_options;
+        if ('WebSocket' in window) {
+          requirements.push('mqtt.js');
+        } else {
+          requirements.push('socketio.js');
+        }
+        if (msg_options.enable_chat) {
+          requirements = requirements.concat(['js/Manage/jquery.simplemodal.js', 'js/Manage/jquery.edo.selectfile.js',
+            EDO.servers.viewer + '/static/core.js',
+            EDO.servers.viewer + '/static/viewer.js',
+            'paste_image.i18n.js'
+          ]);
+        }
+        load(requirements, function() {
+          load(['zopen.message:init.js'], function(){
+            if (window.EDO && !EDO.isMobile) {
+              // 初始化桌面版
+              $(document).on('message:inited', function() {
+                load([
+                  'zopen.message:notify.js',
+                  'zopen.message:unread_counter.js'
+                ], function() {
+                  message.load_templates(function() {
+                    message.notify.init(EDO.notify_channels);
+                    message.counter.init('#current_site .site_msg_count');
+                    if (EDO.msg_options.enable_chat) {
+                      message.chat.init();
+                    }
+                  });
+                });
+              });
+            } else if (window.EDO && EDO.isMobile) {
+              // 移动端已经有专门的通知入口，隐藏桌面版的通知入口
+              $('#notify-center').hide();
+            }
+          });
+        });
+      });
+    });
+}
+;
+$('#content').ksson('refresh-folder', {"delay": 0, "kss": "https://shishang.easydo.cn/default/teamspace/section1/@@refresh?view=tabular"}, {});
+$('#content').ksson('content-removed', {"delay": 0, "kss": "https://shishang.easydo.cn/default/teamspace/section1/@@refresh?view=tabular"}, {});
+$(document).ksson('rtc:refused', {"delay": 0, "kss": "@@login_refused"}, {});
+$(document).ksson('rtc:killed', {"delay": 0, "kss": "https://shishang.easydo.cn/default/@zopen.user_setting:login_again"}, {});</script>
+  
+
+<div id="lbOverlay" style="display: none;"></div><div id="lbCenter" style="display: none;"><div id="lbImage"><div style=""><a id="lbPrevLink" href="https://shishang.easydo.cn/default/teamspace/section1/#"></a><a id="lbNextLink" href="https://shishang.easydo.cn/default/teamspace/section1/#"></a></div></div></div><div id="lbBottomContainer" style="display: none;"><div id="lbBottom"><a id="lbCloseLink" href="https://shishang.easydo.cn/default/teamspace/section1/#"></a><a id="lbDownLoadLink"></a><a id="lbLookLink"></a><a id="lbPrintLink"></a><a id="lbRotationLink" href="https://shishang.easydo.cn/default/teamspace/section1/#"></a><div id="lbCaption"></div><div id="lbNumber"></div><div style="clear: both;"></div></div></div><div id="subfolder-menu" class="live-search" style="display: none;"></div><a href="javascript:;" id="right-aside" style="background: rgb(25, 146, 212); color: rgb(255, 255, 255); display: none; font-size: 20px; padding: 10px 20px; position: fixed; right: 0px; top: 30%; opacity: 0.5; z-index: 100;"><i class="fa fa-angle-left"></i></a><a href="javascript:;" id="left-aside" style="background: rgb(25, 146, 212); color: rgb(255, 255, 255); display: none; font-size: 20px; padding: 10px 20px; position: fixed; left: 0px; top: 30%; opacity: 0.5; z-index: 100;"><i class="fa fa-angle-right"></i></a>
+
+<div id="site-live-search" class="live-search" style="display: none;">
+<div id="site-search" class="kss-com light-tabs tabArea">
+<ul class="tabs">
+<li class="selected" id="tab-4277">
+<a href="#tab-body-tab-4277" class="kss-com link kss node" data-kss="@zopen.views:view_site_search?refresh=1">历史记录</a>
+</li>
+<li class="" id="tab-2932"></li>
+</ul><div class="visualClear">
+</div>
+<div id="tab-body-tab-4277" class="tabBody">
+<ul id="" class="kss-com">
+<li>
+<a href="#" class="kss-com link kss" data-kss="images/Manage/bg.jpg">
+<i class="fa fa-file-image-o" style="color: #3D5AFE;">
+</i> bg.jpg</a>
+</li>
+</ul>
+</div>
+<div id="tab-body-tab-2932" class="tabBody hidden">
+</div>
+<div id="tab-body-tab-360" class="tabBody hidden">
+</div>
+<div id="tab-body-tab-4958" class="tabBody hidden">
+</div></div></div>
+
+</body></html>

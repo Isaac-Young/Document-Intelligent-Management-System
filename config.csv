@@ -1,0 +1,8 @@
+dataBaseRoute,fileTags.db
+sheetName,tags
+tempRoute,content.dat
+diskRoute,Data\File
+forceRefresh,true
+FILTER
+ÎÄ¼þ,txt;doc;docx;
+³ÌÐò,exe;

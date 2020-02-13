@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="zh" type="basic"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="js/Manage/flXHR.js"></script><script src="js/Manage/notify.js"></script><script src="js/Manage/chat.js"></script><script src="js/Manage/templates.js"></script><script src="js/Manage/ui.js"></script><script src="js/Manage/unread_counter.js"></script><script src="js/Manage/utils.js"></script><script src="js/Manage/init.js"></script><script src="js/Manage/fileprogress.js"></script><script src="js/Manage/tus.js"></script><script src="js/Manage/jquery.filedrop.js"></script><script src="js/Manage/paste_image.i18n.js"></script><script src="js/Manage/viewer.js"></script><script src="js/Manage/core.js"></script><script src="js/Manage/jquery.edo.selectfile.js"></script><script src="js/Manage/jquery.simplemodal.js"></script><script src="js/Manage/mqtt.js"></script><script src="js/Manage/i18n.js"></script><script src="js/Manage/msgclient.js"></script><script src="js/Manage/rtc.js"></script><script src="js/Manage/filerepos.js"></script>
+    <title>日常文档库</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="shortcut icon" type="image/x-icon" href="https://shishang.easydo.cn/__cache__/workonline/1552611292//img/favicon.ico">
+    <link rel="root-url" href="https://shishang.easydo.cn/default">
+    <link rel="cache-url" href="https://shishang.easydo.cn/__cache__/workonline/1552611292/">
+    <link rel="packages-cache-url" href="https://shishang.easydo.cn/default/packages/">
+    <link type="text/css" rel="stylesheet" href="css/Manage/zopen-component.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/Manage/zopen-template.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/Manage/search.css"/>
+    <link type="text/css" rel="stylesheet" href="css/Manage/mricode.pagination.css"/>
+    <script src="js/Manage/jquery-2.1.4.min.js" type="application/javascript"></script>
+    <script src="js/Manage/mricode.pagination.js" type="application/javascript"></script>
+    <script charset="utf-8" src="js/Manage/zopen.core.js"></script><style type="text/css">  .JColResizer{table-layout:fixed;} .JColResizer > tbody > tr > td, .JColResizer > tbody > tr > th{overflow:hidden}  .JPadding > tbody > tr > td, .JPadding > tbody > tr > th{padding-left:0!important; padding-right:0!important;} .JCLRgrips{ height:0px; position:relative;} .JCLRgrip{margin-left:-5px; position:absolute; z-index:5; } .JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: col-resize;top:0px} .JCLRLastGrip{position:absolute; width:1px; } .JCLRgripDrag{ border-left:1px dotted black;	} .JCLRFlex{width:auto!important;} .JCLRgrip.JCLRdisabledGrip .JColResizer{cursor:default; display:none;}</style>
+  <link media="all" href="css/Manage/chat.css" rel="stylesheet" type="text/css"><script src="js/Manage/checkplayer.js" type="text/javascript"></script><script src="js/Manage/flensed.js" type="text/javascript"></script></head>
+  <body class="view-tabular type-folder">
+    <div id="visual-wrapper">
+      <div id="header">
+        <div class="actionMenu">
+    <ul class="topNavTabs" id="site-navbar">
+        <li>
+            <a href="workspace.html">工作台</a>
+        </li>
+        <li class="selected">
+            <a href="manage.html">日常文档库</a>
+        </li>
+        <li>
+            <a href="setting.html">设置</a>
+        </li>
+	<li>
+            <a href="index.html">返回首页</a>
+        </li>
+        
+<li style="display:none;" class="collapsed">
+            <dl class="actionMenu">
+            <dt class="actionMenuHeader KSSActionMenu">
+                <button class="navbar-toggle KSSActionMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </dt>
+            <dd class="actionMenuContent KSSActionMenuContent hidden" style="right: 0;"></dd>
+        </dl></li>
+    </ul>
+ 
+
+        </div>
+        <div id="header-right" class="topNavTabs">
+    <ul>
+        
+            <li id="notify-center">
+<dl class="actionMenu">
+  <dt class="actionMenuHeader KSSActionMenu" id="notify-trigger">
+    <a id="current_site" href="javascript:;">
+      <span class="current_site_title"></span>
+          <i class="icon-bell"></i>
+          <span class="site_msg_count unmsg_num">0</span>
+    </a>
+  </dt>
+      <script>var channels = [{"name": "workflow", "title": "\u6d41\u7a0b"}, {"name": "sendme", "title": "\u53d1\u9001\u7ed9\u6211\u7684"}, {"name": "mentioned", "title": "\u63d0\u5230\u6211\u7684"}, {"name": "announcement", "title": "\u516c\u544a"}, {"name": "comment", "title": "\u8bc4\u8bba"}, {"name": "subscribe", "title": "\u8ba2\u9605"}, {"name": "default", "title": "\u5176\u4ed6"}]</script>
+            </td>
+            <td style="border-left:1px solid #E5ECF9;height:100%;width:580px;vertical-align:top;width: 85%;">
+              <div id="msg-history" style="height:200px;">          <div class="ui_conversation_manager">            <div class="conversations"></div>          </div></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     </dd>
+</dl>
+<div id="xmpp-sound"></div>
+<script>var root_url = $("[rel=root-url]").attr("href");</script>
+<script type="text/javascript">
+// 关闭飘窗
+$('body').on('click', 'a[name="notify"]', function(event) {
+    var fadeOutDuration = 500,
+        helper = $(this).parents('div.jquery-message');
+    helper.animate(
+        { opacity: 0 },
+        fadeOutDuration,
+        function() {
+            $(this).hide();
+            $(this).remove();
+        }
+    );
+});
+</script>
+<script type="text/javascript">
+  $('body').on('click', '.chatSelectSubmit', function(){
+    var data = $(this.form).serialize();
+    $(this).kss({
+        url: '@@chatAction', params: data });
+  });
+</script>
+</li>
+
+
+            
+            <script>var sites_info = []</script>
+            <script>var current_site_info = {"name": "default", "title": ""}</script>
+            <script>var other_site = {"title": "\u5176\u4ed6\u7ad9\u70b9"}</script>
+        
+                
+        <li style="margin-right:10px;_margin-right:7px"></li>
+    </ul>
+
+</div>
+
+        <div id="site-actions">
+    <div id="site-new">
+        <dl class="actionMenu">
+            <dt class="actionMenuHeader KSSActionMenu">
+                <i class="fa new" title="快捷添加"></i>
+                <span class="arr_d"><em class="b1"></em><em class="b2"></em><em class="b3"></em></span>
+            </dt>
+            <dd class="actionMenuContent KSSActionMenuContent hidden">
+                <ul class="actionMenuContent KSSActionMenuContent hidden" id="new-actions" kssattr:url="https://shishang.easydo.cn/default/teamspace/section1/@@ajax_content_actions">
+            <li>
+                <a href="" class="kssattr-param1-newFolder" style="padding: 2px 15px;">
+                    <i style="color:#FFB74D;width:15px;"></i>
+                    <span>PDF 文档</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="edit.html" class="kssattr-param1-newDocument" data-ext="docx" style="padding: 2px 15px;">
+                    <i style="color:#5C6BC0;width:15px;"></i>
+                    <span>Word 文档(.docx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="pptx" style="padding: 2px 15px;">
+                    <i style="color:#FF6E40;width:15px;"></i>
+                    <span>PowerPoint 文档(.pptx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="xlsx" style="padding: 2px 15px;">
+                    <i style="color:#43A047;width:15px;"></i>
+                    <span>Excel 文档(.xlsx)</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="html" style="padding: 2px 15px;">
+                    <i style="color:#BDBDBD;width:15px;"></i>
+                    <span>图片</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="kssattr-param1-newDocument" data-ext="md" style="padding: 2px 15px;">
+                    <i style="color:#BDBDBD;width:15px;"></i>
+                    <span>音频</span>
+                </a>
+            </li>
+            
+                <li>
+                    <a href="" class="kssattr-param1-newDocument" data-ext="template" style="padding: 2px 15px;">
+                        <i style="width:15px;"></i>
+                        <span>视频</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="kssattr-param1-newShortcut" style="padding: 2px 15px;">
+                        <i style="color:#4E6D86;width:15px;"></i>
+                        <span>压缩文件</span>
+                    </a>
+                </li>       
+        </ul>
+            </dd>
+        </dl>
+    </div>
+    <div id="site-searchbox">
+        <form name="searchform" action="result.html">
+            <div class="searchBox" id="search-box">
+              <input type="text" value="" placeholder="全站搜索" name="text" id="search" title="全站搜索" autocomplete="off">
+              <input type="submit" id="magnifier" value="" title="搜索">
+              <i class="fa fa-close hand hidden"></i>
+            </div>
+        </form>
+    </div>
+
+</div>
+        <div class="visualClear"><!-- --></div>
+      </div>
+      <div id="visual-content">
+        <div id="top"></div>
+        <div id="site-subnav"><div class="subnav" id="sub-navbar">
+    <ul class="nav-tabs">
+        
+        <li class="selected">
+            <a href="manage.html">Word</a>
+        </li>
+	<li>
+            <a href="manage.html">Excel</a>
+        </li>
+	<li>
+            <a href="manage.html">PPT</a>
+        </li>
+	<li>
+            <a href="manage.html">PDF</a>
+        </li>
+	<li>
+            <a href="manage.html">图片</a>
+        </li>
+	<li>
+            <a href="manage.html">音频</a>
+        </li>
+	<li>
+            <a href="manage.html">视频</a>
+        </li>
+	<li>
+            <a href="manage.html">其它</a>
+        </li>
+        
+    </ul>
+</div>
+</div>
+        <div class="JCLRgrips" style="width: 1519px;"><div class="JCLRgrip" style="left: 195px; height: 674px;"><div class="JColResizer"></div></div><div class="JCLRgrip JCLRdisabledGrip" style="left: 1201.4px; height: 674px;"><div class="JColResizer"></div></div><div class="JCLRgrip JCLRLastGrip" style="left: 1519.8px; height: 674px;"></div></div><table id="columns" class="leftcol rightcol JColResizer">
+          <tbody>
+            <tr>
+              <td id="main" style="">
+<p>共 15 个结果 (耗时 0.106 秒)</p>
+<div class="container">
+            <div style="display:table">
+               
+                        
